@@ -1,0 +1,131 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  --image-container-width: 35vw;
+}
+
+.container {
+    display: flex;
+    align-items: stretch;
+    height: 100vh;
+    width: 100vw;
+}
+
+.image-container {
+    outline: 1px solid black;
+    width: var(--image-container-width);
+    background-color: rgba(59, 55, 0, 0.993);
+    background-image: url("./assets/ancient-north-european-god-freyr-illustration.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: round;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px 0;
+}
+
+.logo-img {
+    width: 70px;
+    height: auto;
+}
+
+.logo-text {
+    color: white;
+    font-size: 40px;
+}
+
+.artist {
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.artist a {
+    color: rgb(139, 139, 139);
+    text-decoration: none;
+}
+
+.form-container {
+    width: calc(100vw - var(--image-container-width));
+    padding-top: 80px;
+    --padding: 10px 30px;
+}
+
+.statement, .form-container h3, .form-container button, .login {
+    margin: var(--padding);
+}
+
+.statement {
+    font-weight: bold;
+}
+
+.form-container h3 {
+    margin-top: 50px;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid grey;
+    padding: var(--padding);
+    padding-bottom: 30px;
+}
+
+.input-row {
+    display: flex;
+    gap: 100px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input label {
+    font-size: small;
+    font-weight: bold;
+    color: rgb(68, 68, 68);
+}
+
+input {
+    min-height: 1.2lh;
+    border-width: 1px;
+    border-color: rgba(128, 128, 128, 0.322);
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+form button {
+    background-color: rgb(60, 112, 60);
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-weight: bolder;
+}
+
+.login {
+    margin-top: 20px;
+    color: rgb(53, 52, 52);
+}
+
+.login a {
+    color: inherit;
+    text-decoration: none;
+}
