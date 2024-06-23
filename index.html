@@ -34,11 +34,12 @@
                 You <em>know</em> you want to.
             </p>
             <h3>Let's do this!</h3>
-            <form action="#">
+            <form action="/index.html" enctype="text/plain" id="contactForm">
+
                 <fieldset>
                     <div class="input-row">
                         <div class="input">
-                            <label for="first_name">FIRST NAME</label>
+                            <label for="first_name">*FIRST NAME</label>
                             <input type="text" id="first_name" required>
                         </div>
                         <div class="input">
@@ -49,29 +50,34 @@
 
                     <div class="input-row">
                         <div class="input">
-                            <label for="email">EMAIL</label>
+                            <label for="email">*EMAIL</label>
                             <input type="email" id="email" required>
                         </div>
                         <div class="input">
-                            <label for="phone">PHONE NUMBER</label>
-                            <input type="number" id="phone" placeholder="+2347012345678" pattern="^\+234\d{10}$" required>
+                            <label for="phone">*PHONE NUMBER</label>
+                            <input type="number" id="phone" name="phone" required>
+                            <p class="phone-error">Please provide a Nigerian phone (e.g +2347012345678)</p>
                         </div>
                     </div>
 
                     <div class="input-row">
                         <div class="input">
-                            <label for="password">PASSWORD</label>
-                            <input type="text" id="password"  required>
+                            <label for="password">*PASSWORD</label>
+                            <input type="password" id="password" name="password" required>
+                            <button class="show-password" id="show-password">Show Password</button>
                         </div>
                         <div class="input">
-                            <label for="confirm">CONFIRM PASSWORD</label>
-                            <input type="text" id="confirm">
+                            <label for="confirm">*CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm" name="password" required>
+                            <p class="error">Password mismatch</p>
                         </div>
                     </div>
                 </fieldset>
 
                 <button type="submit">Create Account</button>
+                
                 <div class="login">Already have an account? <a href="#" class="login-link">Log in</a></div>
+
             </form>
         </div>
     </div>
